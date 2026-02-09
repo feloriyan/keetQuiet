@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" app:cardCornerRadius="24dp" app:cardElevation="0dp" app:strokeWidth="0dp" android:backgroundTint="@color/card_background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp">
+
+        <ImageView android:id="@+id/ivPlayIcon" android:layout_width="56dp" android:layout_height="56dp" android:contentDescription="@string/play_message" android:background="@drawable/bg_circle_green_light" android:padding="16dp" android:src="@drawable/ic_play" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:tint="@color/keet_green" />
+
+        <LinearLayout android:id="@+id/llText" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:orientation="vertical" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@+id/actionContainer" app:layout_constraintStart_toEndOf="@id/ivPlayIcon" app:layout_constraintTop_toTopOf="parent">
+
+            <TextView android:id="@+id/tvDuration" android:layout_width="wrap_content" android:layout_height="wrap_content" tools:text="0:45 Duration" android:textColor="@color/text_primary" android:textSize="18sp" android:textStyle="bold" />
+
+            <TextView android:id="@+id/tvTimestamp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" tools:text="Today, 10:24 AM" android:textColor="@color/text_secondary" android:textSize="14sp" />
+        </LinearLayout>
+
+        <FrameLayout android:id="@+id/actionContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnAction" android:layout_width="56dp" android:layout_height="56dp" android:padding="16dp" app:icon="@drawable/ic_transcribe" app:iconGravity="textStart" app:iconPadding="0dp" app:iconSize="24dp" app:cornerRadius="28dp" app:backgroundTint="@color/keet_green" style="@style/Widget.Material3.Button.Icon" />
+
+            <ProgressBar android:id="@+id/progressBar" android:layout_width="24dp" android:layout_height="24dp" android:layout_gravity="center" android:visibility="gone" android:indeterminateTint="@color/keet_green" />
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

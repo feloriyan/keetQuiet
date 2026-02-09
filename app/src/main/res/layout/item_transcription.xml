@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" app:cardCornerRadius="24dp" app:cardElevation="0dp" app:strokeWidth="0dp" android:backgroundTint="@color/card_background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp">
+
+        <ImageView android:id="@+id/sourceIcon" android:layout_width="32dp" android:layout_height="32dp" android:padding="4dp" android:background="@drawable/bg_circle_green_light" android:src="@drawable/ic_whatsapp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:tint="@color/keet_green" tools:ignore="ContentDescription" />
+
+        <TextView android:id="@+id/dateText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:textColor="@color/text_secondary" android:textSize="14sp" app:layout_constraintBottom_toBottomOf="@id/sourceIcon" app:layout_constraintStart_toEndOf="@id/sourceIcon" app:layout_constraintTop_toTopOf="@id/sourceIcon" tools:text="Vor 2 Stunden • WhatsApp" />
+
+        <TextView android:id="@+id/transcriptionText" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:lineSpacingExtra="4dp" android:textColor="@color/text_primary" android:textSize="16sp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/sourceIcon" tools:text="Hier steht die transkribierte Sprachnachricht. Es ist erstaunlich wie gut das Modell funktioniert." />
+
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:orientation="horizontal" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/transcriptionText">
+
+            <com.google.android.material.button.MaterialButton android:id="@+id/copyButton" style="@style/Widget.Material3.Button.TextButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/copy" android:textColor="@color/keet_green" app:icon="@drawable/ic_content_copy" app:iconTint="@color/keet_green" />
+
+            <com.google.android.material.button.MaterialButton android:id="@+id/shareButton" style="@style/Widget.Material3.Button.TextButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share" android:textColor="@color/keet_green" app:icon="@drawable/ic_share" app:iconTint="@color/keet_green" />
+
+            <com.google.android.material.button.MaterialButton android:id="@+id/deleteButton" style="@style/Widget.Material3.Button.TextButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delete" android:textColor="#E57373" app:icon="@drawable/ic_delete" app:iconTint="#E57373" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

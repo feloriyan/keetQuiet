@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- KeetQuiet Design Palette - Dark Mode -->
+    <color name="app_background">#18191A</color>
+    <color name="keet_green">#B2E07E</color>
+    <color name="keet_green_light">#384B20</color>
+    <color name="keet_blue_accent">#90CAF9</color>
+    <color name="keet_blue_light">#1D2429</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B0B3B8</color>
+    <color name="card_background">#3A3B3C</color>
+    <color name="status_blue">#18191A</color>
+    <color name="neutral_grey">#44474E</color>
+
+    <!-- Material 3 mappings - Dark Mode -->
+    <color name="primary">#B2E07E</color>
+    <color name="onPrimary">#1B3700</color>
+    <color name="primaryContainer">#285000</color>
+    <color name="onPrimaryContainer">#CEEFAB</color>
+
+    <color name="secondary">#90CAF9</color>
+    <color name="onSecondary">#003355</color>
+
+    <color name="surface">#1A1C1E</color>
+    <color name="onSurface">#E2E2E6</color>
+    <color name="surfaceVariant">#44474E</color>
+    <color name="onSurfaceVariant">#C4C7C5</color>
+</resources>

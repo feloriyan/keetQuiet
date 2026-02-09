@@ -1,0 +1,26 @@
+# Gradle / build output
+.gradle/
+build/
+app/build/
+
+# Kotlin / IDE caches
+.kotlin/
+.idea/
+*.iml
+
+# Local machine config
+local.properties
+
+# Keystore / signing
+*.jks
+*.keystore
+
+# Logs and crash dumps
+*.log
+crash_log*.txt
+detailed_log*.txt
+test_log*.txt
+
+# OS files
+.DS_Store
+Thumbs.db
