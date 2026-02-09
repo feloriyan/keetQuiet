@@ -2,31 +2,33 @@
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Android](https://img.shields.io/badge/Android-24%2B-brightgreen.svg)](https://developer.android.com/)
-[![Kotlin](https://img.shields.io/badge/Kotlin-1.9.22-blue.svg)](https://kotlinlang.org/)
+[![Kotlin](https://img.shields.io/badge/Kotlin-2.1.20-blue.svg)](https://kotlinlang.org/)
 
-KeetQuiet is an open-source Android app that transcribes voice messages from popular messaging apps using offline speech recognition powered by nvidia/parakeet-tdt-0.6b-v3. No internet connection required - your conversations stay private!
+KeetQuiet is an open-source Android app that transcribes voice messages from popular messaging apps using offline speech recognition powered by `nvidia/parakeet-tdt-0.6b-v3`. Transcription runs locally on-device; internet is only needed once to download the speech model.
 
 ## Features
 
-**Offline Transcription** - No internet required, all processing happens on-device
-**Multi-App Support** - Works with WhatsApp, Telegram, Signal, and other messaging apps
-**Privacy-Focused** - No data leaves your device, local-only processing
+- **Offline Transcription** - No internet required after model download; all processing happens on-device
+- **Multi-App Support** - Works with WhatsApp, Telegram, Signal, and other messaging apps
+- **Privacy-Focused** - No data leaves your device, local-only processing
 
 
 ## Screenshots
 
-<!-- Add screenshots here -->
-<!-- ![Main Screen](screenshots/main.png) -->
-<!-- ![Transcription](screenshots/transcription.png) -->
-<!-- ![History](screenshots/history.png) -->
+| Home | Result |
+|---|---|
+| ![Home](screenshots/home.png) | ![Result](screenshots/result.png) |
+| ![History](screenshots/history.png) | ![Settings](screenshots/settings.png) |
+
+![Dark Mode](screenshots/screenshot%20dark%20mode.png)
 
 ## Installation
 
-### From Source3
+### From Source
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/KeetQuiet.git
+git clone https://github.com/feloriyan/keetQuiet.git
 cd KeetQuiet
 
 # Build with Gradle
@@ -41,13 +43,13 @@ adb install app/build/outputs/apk/debug/app-debug.apk
 - **Android 7.0+ (API 24+)**
 - **Storage Permission** - To access voice message files
 - **Internet Permission** - Only for downloading language models (optional)
-- **~500MB Storage** - For speech recognition models
+- **~700MB Storage** - For speech recognition models and app cache
 
 ## Usage
 
 ### First Launch
 
-1. **Download Models**: On first launch, the app will download required speech recognition models (~300MB)
+1. **Download Models**: On first launch, the app downloads the speech recognition model (~650MB)
 2. **Grant Permissions**: Allow storage access to find voice messages
 3. **Discovery**: The app will automatically scan for voice messages
 
@@ -62,7 +64,7 @@ adb install app/build/outputs/apk/debug/app-debug.apk
 
 ## Privacy & Security
 
-🔒 **Your data stays private**:
+**Your data stays private**:
 - All processing happens locally on your device
 - No audio or text data is sent to any servers
 - No internet connection required after model download
@@ -102,13 +104,13 @@ adb install app/build/outputs/apk/debug/app-debug.apk
 - Android Studio (latest version)
 - Android SDK (API 24+)
 - Java 17+
-- Kotlin 1.9.22+
+- Kotlin 2.1.20+
 
 ### Setup
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/KeetQuiet.git
+   git clone https://github.com/feloriyan/keetQuiet.git
    cd KeetQuiet
    ```
 
@@ -128,7 +130,7 @@ adb install app/build/outputs/apk/debug/app-debug.apk
 
 ## Contributing
 
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+Contributions are welcome. For larger changes, please open an issue first so we can align on scope.
 
 ### Ways to Contribute
 
@@ -151,8 +153,7 @@ KeetQuiet is licensed under the **GNU General Public License v3.0**. See [LICENS
 
 ## Support
 
-- **GitHub Issues**: For bug reports and feature requests
-- **Discussions**: For general questions and ideas
+- **GitHub Issues**: For bug reports, feature requests, and questions
 
 ## Credits
 
@@ -163,7 +164,7 @@ KeetQuiet uses these amazing open-source projects:
 - **Room**: SQLite database layer
 - **Hilt**: Dependency injection
 - **Kotlin Coroutines**: Asynchronous programming
-- **nvidia/parakeet-tdt-0.6b-v3**: ASR-Modell für Speech-to-Text
+- **nvidia/parakeet-tdt-0.6b-v3**: ASR model for speech-to-text
 
 ## Donations
 
@@ -181,4 +182,4 @@ Your support helps maintain and improve KeetQuiet! ☕
 
 **KeetQuiet** - Your conversations, your privacy. 🔇
 
-[GitHub](https://github.com/feloriyan/KeetQuiet)
+[GitHub](https://github.com/feloriyan/keetQuiet)
