@@ -1,0 +1,5 @@
+Initial public release.
+- Offline transcription workflow
+- Voice-message discovery from common messenger folders
+- Local transcription history
+- Multi-language UI support

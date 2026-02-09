@@ -1,0 +1,12 @@
+KeetQuiet transcribes voice messages from apps like WhatsApp, Telegram, and Signal fully on-device.
+
+Audio and text stay on your phone. Internet is only needed once to download the speech model.
+
+Features:
+- Offline transcription after initial model download
+- Privacy-focused local processing
+- Works with common voice-message formats
+- History of past transcriptions
+- Simple playback and transcription flow
+
+No tracking, no cloud upload, no account required.
