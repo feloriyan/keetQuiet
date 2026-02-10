@@ -24,3 +24,7 @@ test_log*.txt
 # OS files
 .DS_Store
 Thumbs.db
+
+# Agents documentation
+agents.md
+AGENTS.md
