@@ -12,7 +12,6 @@ KeetQuiet is an open-source Android app that transcribes voice messages from pop
 - **Multi-App Support** - Works with WhatsApp, Telegram, Signal, and other messaging apps
 - **Privacy-Focused** - No data leaves your device, local-only processing
 
-
 ## Screenshots
 
 | Home | Result |
@@ -65,6 +64,7 @@ adb install app/build/outputs/apk/debug/app-debug.apk
 ## Privacy & Security
 
 **Your data stays private**:
+
 - All processing happens locally on your device
 - No audio or text data is sent to any servers
 - No internet connection required after model download
@@ -78,7 +78,7 @@ adb install app/build/outputs/apk/debug/app-debug.apk
 - **Kotlin Coroutines** for asynchronous operations
 - **Room Database** for local data persistence
 - **Sherpa-ONNX with nvidia/parakeet-tdt-0.6b-v3** for offline speech recognition
-- **FFmpeg** for audio format conversion
+- **Android MediaCodec** for native audio format conversion
 
 ### Key Components
 
@@ -109,6 +109,7 @@ adb install app/build/outputs/apk/debug/app-debug.apk
 ### Setup
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/feloriyan/keetQuiet.git
    cd KeetQuiet
@@ -160,7 +161,7 @@ KeetQuiet is licensed under the **GNU General Public License v3.0**. See [LICENS
 KeetQuiet uses these amazing open-source projects:
 
 - **Sherpa-ONNX**: Offline speech recognition engine
-- **FFmpeg**: Audio format conversion
+- **Android MediaCodec**: Native audio format conversion
 - **Room**: SQLite database layer
 - **Hilt**: Dependency injection
 - **Kotlin Coroutines**: Asynchronous programming

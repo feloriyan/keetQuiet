@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.voicetranscriber'
+    namespace 'io.github.feloriyan.keetquiet'
     compileSdk 36
 
     defaultConfig {
-        applicationId "com.example.voicetranscriber"
+        applicationId "io.github.feloriyan.keetquiet"
         minSdk 24
         targetSdk 36
         versionCode 1
@@ -71,14 +71,10 @@ dependencies {
     implementation 'com.google.android.material:material:1.13.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
     
-    // Local sherpa-onnx AAR
-    implementation files('libs/sherpa-onnx.aar')
+    // Local ML Model (JitPack)
+    implementation 'com.github.k2-fsa:sherpa-onnx:v1.12.24'
     
-    // ONNX Runtime for Android
-    implementation 'com.microsoft.onnxruntime:onnxruntime-android:1.17.1'
 
-    // RxFFmpeg for audio conversion
-    implementation 'com.github.microshow:RxFFmpeg:4.9.0'
 
     // Coroutines
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.1'
